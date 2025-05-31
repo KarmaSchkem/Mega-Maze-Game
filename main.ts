@@ -4,8 +4,8 @@ browserEvents.Shift.onEvent(browserEvents.KeyEvent.Pressed, function () {
 function Sprite2 () {
     mySprite = Render.getRenderSpriteVariable()
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile0`)
-    Render.setViewAngleInDegree(100)
     Render.setSpriteAttribute(mySprite, RCSpriteAttribute.ZPosition, 5)
+    Render.setViewAngleInDegree(0)
 }
 browserEvents.Shift.onEvent(browserEvents.KeyEvent.Released, function () {
     Render.setAttribute(Render.attribute.dirX, 1)
